@@ -6,76 +6,99 @@
   <title>About | Radiant Health and Wellness</title>
   <meta name="description" content="Meet the provider behind Radiant Health and Wellness in Ewing, NJ — whole-person primary care opening September 1st.">
   <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <div class="announcement-bar">✨ Now scheduling — Radiant Health and Wellness opens September 1st</div>
+  <div class="announcement-bar"><strong>Opening September 1st</strong> — now scheduling first appointments</div>
 
   <header class="site-header">
     <nav class="nav">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/img/logo.png" alt="Radiant Health and Wellness logo">
+      <a href="index.html" class="nav-logo" aria-label="Radiant Health and Wellness — home">
+        <img src="assets/img/logo.png" alt="Radiant Health and Wellness">
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html#contact-card" class="nav-cta">Get in Touch</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+
     <section class="page-hero">
       <div class="container">
-        <span class="breadcrumb">About Me</span>
+        <span class="eyebrow">About Me</span>
         <h1>Care rooted in genuine connection</h1>
-        <p>I started Radiant Health and Wellness to give patients in Ewing the kind of unhurried, personal care that's become hard to find — care that treats you as a whole person, not just a chart.</p>
+        <p class="lead">I started Radiant Health and Wellness to give patients in Ewing the kind of unhurried, personal care that's become hard to find — care that treats you as a whole person, not just a chart.</p>
       </div>
     </section>
 
-    <section class="about">
-      <div class="container">
-        <div class="about-photo">
+    <section class="section section-white">
+      <div class="container split">
+        <div class="split-visual">
           <img src="assets/img/about-me.jpg" alt="Provider portrait at Radiant Health and Wellness">
         </div>
-        <div class="about-copy">
+        <div>
           <span class="eyebrow">My Story</span>
           <h2>Why I opened Radiant Health and Wellness</h2>
           <p>After years in clinical practice, I saw the same pattern again and again: rushed visits, fragmented records, and patients who felt like a number. Radiant Health and Wellness is my answer to that — a practice built around real relationships, thoughtful care, and modern tools that actually make life easier for patients.</p>
           <p>Every visit here starts with listening. Whether you're coming in for a routine checkup or navigating a more complex health concern, my goal is the same: to help you feel informed, respected, and genuinely cared for.</p>
-          <ul class="about-credentials">
-            <li>Whole-person, relationship-based approach to primary care</li>
-            <li>Focus on prevention, education, and long-term wellness</li>
-            <li>Secure EHR patient portal for records and messaging</li>
-            <li>Conveniently located at 25 Scotch Road, Suite 5, Ewing, NJ</li>
+          <ul class="checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Whole-person, relationship-based approach to primary care
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Focus on prevention, education, and long-term wellness
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Secure EHR patient portal for records and messaging
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Conveniently located at 25 Scotch Road, Suite 5, Ewing, NJ
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="services">
+    <section class="section section-butter">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header centered">
           <span class="eyebrow">My Approach</span>
           <h2>What you can expect</h2>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">🕊️</div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
             <h3>Unhurried Visits</h3>
             <p>Time to ask questions, share concerns, and leave feeling heard — not rushed out the door.</p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">🤝</div>
+          <div class="card">
+            <span class="card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.9"/><path d="M15 3.1a4 4 0 0 1 0 7.8"/></svg>
+            </span>
             <h3>Continuity of Care</h3>
             <p>You'll see a provider who knows your history, not a different face every visit.</p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">📲</div>
+          <div class="card">
+            <span class="card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M12 18.5h.01"/></svg>
+            </span>
             <h3>Easy Access</h3>
             <p>Message your care team, view results, and manage appointments through our patient portal.</p>
           </div>
@@ -83,25 +106,26 @@
       </div>
     </section>
 
-    <section class="cta-band">
+    <section class="cta">
       <div class="container">
         <h2>Let's start your care journey together</h2>
         <p>Radiant Health and Wellness opens September 1st — reach out to get on the schedule.</p>
-        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary">Contact Us <span class="arrow">→</span></a>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-logo">
-            <img src="assets/img/logo.png" alt="Radiant Health and Wellness logo">
-          </div>
+          <span class="footer-logo">
+            <img src="assets/img/logo.png" alt="Radiant Health and Wellness">
+          </span>
           <p>Whole-person primary care in Ewing, NJ. Opening September 1st.</p>
         </div>
-        <div class="footer-col">
+        <div>
           <h4>Explore</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
@@ -110,13 +134,13 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div>
           <h4>Contact</h4>
           <ul class="footer-links">
             <li>25 Scotch Road, Suite 5<br>Ewing, NJ 08618</li>
             <li>Phone: <a href="tel:+16097664345">609-766-4345</a></li>
             <li>Fax: 609-710-7674</li>
-            <li>Email: <a href="mailto:care@radianthealthnp.org">care@radianthealthnp.org</a></li>
+            <li><a href="mailto:care@radianthealthnp.org">care@radianthealthnp.org</a></li>
           </ul>
         </div>
       </div>

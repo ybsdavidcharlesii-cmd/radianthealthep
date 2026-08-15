@@ -3,144 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radiant Health and Wellness | Ewing, NJ</title>
-  <meta name="description" content="Radiant Health and Wellness — nurse practitioner-led primary care in Ewing, NJ. Opening September 1. Personalized care, modern EHR patient portal, easy scheduling.">
+  <title>Radiant Health and Wellness | Primary Care in Ewing, NJ</title>
+  <meta name="description" content="Radiant Health and Wellness — nurse practitioner-led primary care in Ewing, NJ. Opening September 1. Unhurried visits, modern patient portal, personalized care.">
   <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <div class="announcement-bar">✨ Now scheduling — Radiant Health and Wellness opens September 1st</div>
+  <div class="announcement-bar"><strong>Opening September 1st</strong> — now scheduling first appointments</div>
 
   <header class="site-header">
     <nav class="nav">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/img/logo.png" alt="Radiant Health and Wellness logo">
+      <a href="index.html" class="nav-logo" aria-label="Radiant Health and Wellness — home">
+        <img src="assets/img/logo.png" alt="Radiant Health and Wellness">
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html#contact-card" class="nav-cta">Get in Touch</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <div class="hero-copy">
-          <span class="hero-eyebrow">Opening September 1st</span>
-          <h1>Personalized care that helps you feel radiant, inside and out.</h1>
-          <p class="lead">Radiant Health and Wellness brings warm, whole-person primary care to Ewing, NJ — with a modern patient portal that makes staying on top of your health simple.</p>
+        <div>
+          <span class="hero-badge"><span class="dot"></span>Opening September 1st in Ewing, NJ</span>
+          <h1>Care that helps you feel <em>radiant</em> — inside and out.</h1>
+          <p class="lead">Radiant Health and Wellness brings warm, unhurried, whole-person primary care to Ewing — backed by a modern patient portal that keeps your health simple to manage.</p>
           <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary">Get Directions</a>
-            <a href="services.html" class="btn btn-outline">Explore Services</a>
+            <a href="contact.html" class="btn btn-primary">Get in Touch <span class="arrow">→</span></a>
+            <a href="services.html" class="btn btn-secondary">Explore Services</a>
+          </div>
+          <div class="hero-meta">
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              25 Scotch Road, Suite 5, Ewing, NJ
+            </span>
+            <span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+              <a href="tel:+16097664345">609-766-4345</a>
+            </span>
           </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-visual">
           <img src="assets/img/hero-stock.jpg" alt="Calm, welcoming wellness clinic interior">
         </div>
       </div>
     </section>
 
     <!-- About preview -->
-    <section class="about">
-      <div class="container">
-        <div class="about-photo">
+    <section class="section section-white">
+      <div class="container split">
+        <div class="split-visual">
           <img src="assets/img/about-me.jpg" alt="Provider portrait at Radiant Health and Wellness">
         </div>
-        <div class="about-copy">
+        <div>
           <span class="eyebrow">About Me</span>
           <h2>A dedicated provider, right in your neighborhood.</h2>
-          <p>At Radiant Health and Wellness, care is personal. Every visit is unhurried, every plan is tailored to you, and every question is welcome. My goal is to help you feel truly seen — and truly well.</p>
-          <ul class="about-credentials">
-            <li>Whole-person, relationship-based primary care</li>
-            <li>Convenient Ewing, NJ location</li>
-            <li>Modern EHR patient portal for records &amp; messaging</li>
+          <p class="lead">At Radiant Health and Wellness, care is personal. Every visit is unhurried, every plan is tailored to you, and every question is welcome.</p>
+          <ul class="checklist">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Whole-person, relationship-based primary care
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Convenient Ewing, NJ location
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Modern EHR patient portal for records &amp; messaging
+            </li>
           </ul>
-          <a href="about.html" class="btn btn-outline">Read My Story</a>
+          <a href="about.html" class="btn btn-secondary">Read My Story <span class="arrow">→</span></a>
         </div>
       </div>
     </section>
 
     <!-- Services preview -->
-    <section class="services">
+    <section class="section section-butter">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header centered">
           <span class="eyebrow">Services</span>
           <h2>Care built around you</h2>
           <p>From everyday primary care to proactive wellness planning, Radiant Health and Wellness meets you where you are.</p>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">🩺</div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            </span>
             <h3>Primary Care</h3>
             <p>Comprehensive checkups, preventive screenings, and management of ongoing health needs.</p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">🌿</div>
+          <div class="card">
+            <span class="card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.5 3.5-7"/></svg>
+            </span>
             <h3>Wellness Planning</h3>
             <p>Personalized plans covering nutrition, lifestyle, and long-term health goals.</p>
           </div>
-          <div class="service-card featured">
-            <div class="service-icon">💻</div>
+          <div class="card card-feature">
+            <span class="card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
+            </span>
             <h3>EHR Patient Portal</h3>
-            <p>Secure online access to your records, visit summaries, and direct messaging — integrated with our EHR system.</p>
+            <p>Secure online access to your records, visit summaries, and direct messaging with your care team.</p>
           </div>
         </div>
-        <div style="text-align:center; margin-top:40px;">
-          <a href="services.html" class="btn btn-primary">View All Services</a>
+        <div style="text-align:center; margin-top: 40px;">
+          <a href="services.html" class="btn btn-primary">View All Services <span class="arrow">→</span></a>
         </div>
       </div>
     </section>
 
-    <!-- EHR callout -->
-    <section class="ehr-callout">
-      <div class="container">
+    <!-- EHR / portal band -->
+    <section class="band-dark">
+      <div class="container split">
         <div>
-          <span class="eyebrow" style="color: var(--color-yellow);">Patient Portal</span>
+          <span class="eyebrow">Patient Portal</span>
           <h2>Your health record, always within reach.</h2>
-          <p>Radiant Health and Wellness is built on a modern EHR system so you can manage your care with ease — from your first visit onward.</p>
-          <ul class="ehr-features">
-            <li>View lab results and visit summaries securely online</li>
-            <li>Message your care team directly</li>
-            <li>Request appointments and prescription refills</li>
-            <li>Keep your health history organized in one place</li>
+          <p>Radiant Health and Wellness is built on a modern EHR system, so you can manage your care with ease — from your first visit onward.</p>
+          <ul class="feature-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              View lab results and visit summaries securely online
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Message your care team directly
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Request appointments and prescription refills
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Keep your health history organized in one place
+            </li>
           </ul>
         </div>
-        <div class="ehr-panel">
-          <h3 style="color: var(--color-white);">Coming September 1st</h3>
-          <p>We're finalizing patient portal access and a membership/subscription option ahead of opening day. Reach out and we'll notify you as soon as enrollment opens.</p>
-          <a href="contact.html" class="btn btn-primary">Notify Me</a>
+        <div class="panel">
+          <h3>Coming September 1st</h3>
+          <p>We're finalizing patient portal access and a membership option ahead of opening day. Reach out and we'll notify you as soon as enrollment opens.</p>
+          <a href="contact.html" class="btn btn-gold">Notify Me</a>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta-band">
+    <section class="cta">
       <div class="container">
         <h2>Ready to start your care journey?</h2>
         <p>We're currently scheduling ahead of our September 1st opening.</p>
-        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary">Contact Us <span class="arrow">→</span></a>
       </div>
     </section>
+
   </main>
 
-  <!--#include footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-logo">
-            <img src="assets/img/logo.png" alt="Radiant Health and Wellness logo">
-          </div>
+          <span class="footer-logo">
+            <img src="assets/img/logo.png" alt="Radiant Health and Wellness">
+          </span>
           <p>Whole-person primary care in Ewing, NJ. Opening September 1st.</p>
         </div>
-        <div class="footer-col">
+        <div>
           <h4>Explore</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
@@ -149,13 +191,13 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div>
           <h4>Contact</h4>
           <ul class="footer-links">
             <li>25 Scotch Road, Suite 5<br>Ewing, NJ 08618</li>
             <li>Phone: <a href="tel:+16097664345">609-766-4345</a></li>
             <li>Fax: 609-710-7674</li>
-            <li>Email: <a href="mailto:care@radianthealthnp.org">care@radianthealthnp.org</a></li>
+            <li><a href="mailto:care@radianthealthnp.org">care@radianthealthnp.org</a></li>
           </ul>
         </div>
       </div>
