@@ -12,6 +12,70 @@
 </head>
 <body>
 
+  <div class="site-streak" aria-hidden="true">
+    <svg viewBox="0 0 320 1400" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="streakGradientGold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#cf9f3d" stop-opacity="0.75" />
+          <stop offset="3%" stop-color="#cf9f3d" stop-opacity="0.95" />
+          <stop offset="50%" stop-color="#b8892b" stop-opacity="0.9" />
+          <stop offset="97%" stop-color="#cf9f3d" stop-opacity="0.8" />
+          <stop offset="100%" stop-color="#cf9f3d" stop-opacity="0.75" />
+        </linearGradient>
+        <linearGradient id="streakGradientTeal" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1c6e6f" stop-opacity="0.65" />
+          <stop offset="3%" stop-color="#1c6e6f" stop-opacity="0.9" />
+          <stop offset="50%" stop-color="#124a4d" stop-opacity="0.85" />
+          <stop offset="97%" stop-color="#1c6e6f" stop-opacity="0.75" />
+          <stop offset="100%" stop-color="#1c6e6f" stop-opacity="0.65" />
+        </linearGradient>
+        <filter id="streakGlow" x="-75%" y="-75%" width="250%" height="250%">
+          <feGaussianBlur stdDeviation="4" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <path class="streak-path streak-path--1" d="M 250 -40
+        C 170 40, 60 90, 140 170
+        S 300 260, 200 340
+        C 110 410, 10 460, 110 540
+        S 280 640, 190 720
+        C 100 790, 0 850, 120 930
+        S 290 1030, 200 1110
+        C 110 1180, 20 1240, 140 1320
+        S 260 1400, 180 1440" />
+      <path class="streak-path streak-path--2" d="M 220 -60
+        C 140 20, 30 70, 110 150
+        S 270 240, 170 320
+        C 80 390, -20 440, 80 520
+        S 250 620, 160 700
+        C 70 770, -30 830, 90 910
+        S 260 1010, 170 1090
+        C 80 1160, -10 1220, 110 1300
+        S 230 1380, 150 1420" />
+      <path class="streak-path streak-path--3" d="M 280 -30
+        C 200 50, 90 100, 170 180
+        S 330 270, 230 350
+        C 140 420, 40 470, 140 550
+        S 310 650, 220 730
+        C 130 800, 30 860, 150 940
+        S 320 1040, 230 1120
+        C 140 1190, 50 1250, 170 1330
+        S 290 1410, 210 1440" />
+      <path class="streak-path streak-path--4" d="M 195 -50
+        C 115 30, 5 80, 85 160
+        S 245 250, 145 330
+        C 55 400, -45 450, 55 530
+        S 225 630, 135 710
+        C 45 780, -55 840, 65 920
+        S 235 1020, 145 1100
+        C 55 1170, -35 1230, 85 1310
+        S 205 1390, 125 1420" />
+    </svg>
+  </div>
+
   <header class="site-header">
     <nav class="nav">
       <a href="index.html" class="nav-logo" aria-label="Radiant Health and Wellness — home">
