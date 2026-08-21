@@ -57,6 +57,7 @@
 html { scroll-behavior: smooth; }
 
 body {
+  position: relative;
   margin: 0;
   font-family: var(--font-body);
   font-size: 1rem;
@@ -205,11 +206,6 @@ p { margin: 0 0 var(--s2); color: var(--ink-soft); }
   border-bottom: 1px solid var(--gold-200);
 }
 
-/* Own stacking context, above the fixed streak, so page content always reads on top */
-main, .site-footer {
-  position: relative;
-  z-index: 2;
-}
 
 .nav {
   display: flex;
@@ -759,50 +755,47 @@ main, .site-footer {
 }
 
 /* ---------- Scroll-progress streak ---------- */
-/* Flowing ribbon waves, gold/teal, glow-softened — trace in as the page is
-   scrolled. No motion of their own; position is a pure function of scroll. */
+/* Flowing ribbon waves, gold/teal, spanning the full height of the page (not the
+   viewport) so they run from the very top of the document to the very bottom.
+   They scroll normally with content; only the *drawn-in* portion of each ribbon
+   is tied to scroll position, so motion happens only as you scroll. */
 .site-streak {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 50;
   pointer-events: none;
   overflow: hidden;
   mix-blend-mode: multiply;
-  opacity: 0.4;
 }
 
 .site-streak svg {
   position: absolute;
   top: 0;
   right: 0;
+  width: 320px;
   height: 100%;
-  width: auto;
-  min-width: 320px;
 }
 
 .site-streak .streak-path {
   fill: none;
   stroke-linecap: round;
-  filter: url(#streakGlow);
-  /* Always-visible from the top: JS sets --streak-length (this path's length) and
-     --streak-progress (0–1 on scroll, eased/lerped so it glides). The dash pattern
-     draws a fixed-length "ribbon" that starts visible at the top of the page and
-     slides further down the path as you scroll, rather than growing from nothing. */
-  stroke-dasharray: calc(var(--streak-length, 2200) * 0.55) var(--streak-length, 2200);
-  stroke-dashoffset: calc(var(--streak-length, 2200) * -1 * var(--streak-progress, 0));
+  /* Draws top-to-bottom as you scroll: JS computes stroke-dasharray/dashoffset
+     directly (in px, set on the element) rather than via CSS calc()/var(), since
+     a calc() built from custom properties on a dynamically-created SVG path can
+     resolve to an invalid typed length instead of a plain number in some engines. */
 }
 
-.site-streak .streak-path--1 { stroke: url(#streakGradientGold); stroke-width: 4; opacity: 0.6; }
-.site-streak .streak-path--2 { stroke: url(#streakGradientTeal); stroke-width: 2.5; opacity: 0.5; }
-.site-streak .streak-path--3 { stroke: url(#streakGradientGold); stroke-width: 1.75; opacity: 0.4; }
-.site-streak .streak-path--4 { stroke: url(#streakGradientTeal); stroke-width: 1.25; opacity: 0.3; }
-
-@media (prefers-reduced-motion: reduce) {
-  .site-streak .streak-path {
-    stroke-dashoffset: 0;
-  }
-}
+.site-streak .streak-path--1 { stroke: url(#streakGradientGold); stroke-width: 4; opacity: 0.55; }
+.site-streak .streak-path--2 { stroke: url(#streakGradientTeal); stroke-width: 2.5; opacity: 0.45; }
+.site-streak .streak-path--3 { stroke: url(#streakGradientGold); stroke-width: 1.75; opacity: 0.35; }
+.site-streak .streak-path--4 { stroke: url(#streakGradientTeal); stroke-width: 1.25; opacity: 0.28; }
 
 @media (max-width: 640px) {
-  .site-streak { opacity: 0.42; }
+  .site-streak .streak-path--1 { opacity: 0.4; }
+  .site-streak .streak-path--2 { opacity: 0.32; }
+  .site-streak .streak-path--3 { opacity: 0.25; }
+  .site-streak .streak-path--4 { opacity: 0.2; }
 }
