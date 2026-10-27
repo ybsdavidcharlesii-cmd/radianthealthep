@@ -662,7 +662,7 @@ p { margin: 0 0 var(--s2); color: var(--ink-soft); }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: linear-gradient(160deg, var(--green-900) 0%, var(--teal-900) 70%);
+  background: var(--green-900);
   color: rgba(255, 255, 255, 0.75);
   padding: var(--s8) 0 var(--s3);
 }
