@@ -1,4 +1,4 @@
-// Radiant Health and Wellness — shared site scripts
+// Radiant Health and Wellness: shared site scripts
 
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
