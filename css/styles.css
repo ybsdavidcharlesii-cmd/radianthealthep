@@ -371,7 +371,6 @@ p { margin: 0 0 var(--s2); color: var(--ink-soft); }
   box-shadow: var(--shadow-md);
   aspect-ratio: 4 / 4.6;
   object-fit: cover;
-  object-position: 35% center;
   width: 100%;
 }
 
