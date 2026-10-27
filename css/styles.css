@@ -773,13 +773,10 @@ p { margin: 0 0 var(--s2); color: var(--ink-soft); }
 .blog-post-body { padding: var(--s6) var(--s6) var(--s5); }
 
 .blog-meta {
-  display: inline-block;
-  margin-bottom: var(--s2);
-  padding: 4px 14px;
-  border-radius: var(--r-full);
-  background: var(--green-100);
-  color: var(--green-900);
-  font-size: 0.8rem;
+  display: block;
+  margin-bottom: var(--s1);
+  color: var(--gold-700);
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
